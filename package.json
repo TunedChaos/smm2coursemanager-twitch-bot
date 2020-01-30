@@ -4,7 +4,9 @@
   "description": "This is a twitch bot meant for handling interaction with the SMM2 Course Manager Server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \\\"Test command ran successfully\\\" && exit 0"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Test command ran successfully\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -17,10 +19,21 @@
     "smm2coursemanager",
     "twitch"
   ],
-  "author": "Tuned Chaos LLC",
+  "author": {
+    "name": "Tuned Chaos LLC"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/TunedChaos/smm2coursemanager-twitch-bot/issues"
   },
-  "homepage": "https://github.com/TunedChaos/smm2coursemanager-twitch-bot#readme"
+  "homepage": "https://github.com/TunedChaos/smm2coursemanager-twitch-bot",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "socket.io-client": "^2.3.0",
+    "twitch": "^3.7.1",
+    "twitch-chat-client": "^3.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
