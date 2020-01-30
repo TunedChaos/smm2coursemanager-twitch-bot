@@ -30,8 +30,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "socket.io-client": "^2.3.0",
-    "twitch": "^3.7.1",
-    "twitch-chat-client": "^3.7.1"
+    "tmi.js": "^1.5.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

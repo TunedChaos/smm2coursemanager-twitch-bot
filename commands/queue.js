@@ -1,0 +1,24 @@
+const path = require('path')
+require('dotenv').config({path: path.resolve(__dirname + '../.env')})
+const io = require('socket.io-client')
+var socket = io.connect(process.env.SERVER_ADDRESS)
+
+function getQueue(personName) {
+    return new Promise(resolve => {
+        socket.emit('course_queue', personName)
+        socket.on('queue_course', response => {
+            resolve(response)
+        })
+    })
+}
+
+module.exports = (client, target, context, msg) => {
+    getQueue(context['display-name'])
+    .then(response => {
+        jsonResponse = JSON.parse(response)
+        responseMessage = `@${context['display-name']}, ${jsonResponse.message}`
+        client.say(target, responseMessage)
+            .then(message => console.log(`Sent message: ${message}`))
+            .catch(console.error)
+    })
+}
