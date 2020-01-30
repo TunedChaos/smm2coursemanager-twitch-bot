@@ -1,0 +1,26 @@
+{
+  "name": "smm2coursemanager-twitch-bot",
+  "version": "1.0.0",
+  "description": "This is a twitch bot meant for handling interaction with the SMM2 Course Manager Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Test command ran successfully\\\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TunedChaos/smm2coursemanager-twitch-bot.git"
+  },
+  "keywords": [
+    "mariomaker2",
+    "nintendo",
+    "switch",
+    "smm2coursemanager",
+    "twitch"
+  ],
+  "author": "Tuned Chaos LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TunedChaos/smm2coursemanager-twitch-bot/issues"
+  },
+  "homepage": "https://github.com/TunedChaos/smm2coursemanager-twitch-bot#readme"
+}
