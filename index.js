@@ -1,7 +1,6 @@
 const fs = require('fs')
 const path = require('path')
 require('dotenv').config({path: path.resolve(__dirname+'/.env')})
-//const https = require('https')
 const tmi = require('tmi.js')
 
 fs.readdir('./events/', (err, files) => {
@@ -26,11 +25,3 @@ const opts = {
 const client = new tmi.client(opts)
 
 client.connect()
-
-function onMessageHandler(target, context, msg, self){
-    if(self) { return } // We don't need to handle ourselves!
-}
-
-client.on('connected', () => { 
-    console.log("Connected")
- })
