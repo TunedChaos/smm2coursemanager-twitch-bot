@@ -12,7 +12,7 @@ function getQueue(personName) {
     })
 }
 
-module.exports = (client, target, context, msg) => {
+module.exports = (client, target, context) => {
     getQueue(context['display-name'])
     .then(response => {
         jsonResponse = JSON.parse(response)

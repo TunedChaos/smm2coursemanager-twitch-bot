@@ -1,7 +1,7 @@
 const path = require('path')
 require('dotenv').config({path: path.resolve(__dirname + '../.env')})
 
-module.exports = (client, target, context, msg) => {
+module.exports = (client, target, context) => {
     if(typeof process.env.LIST_ADDRESS != "undefined"){
         if(process.env.LIST_ADDRESS !== "")
         {

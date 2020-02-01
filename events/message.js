@@ -17,15 +17,15 @@ module.exports = (client, target, context, msg, self) => {
         }
         else if(messageContent.startsWith(`${commandPrefix}list`))
         {
-            return list(client, target, context, msg)
+            return list(client, target, context)
         }
         else if(messageContent.startsWith(`${commandPrefix}next`))
         {
-            return next(client, target, context, msg)
+            return next(client, target, context)
         }
         else if(messageContent.startsWith(`${commandPrefix}playing`))
         {
-            return playing(client, target, context, msg)
+            return playing(client, target, context)
         }
         else if(messageContent.startsWith(`${commandPrefix}position`))
         {
@@ -33,7 +33,7 @@ module.exports = (client, target, context, msg, self) => {
         }
         else if(messageContent.startsWith(`${commandPrefix}queue`))
         {
-            return queue(client, target, context, msg)
+            return queue(client, target, context)
         }
         else if(messageContent.startsWith(`${commandPrefix}status`))
         {

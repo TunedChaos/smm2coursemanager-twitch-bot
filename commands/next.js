@@ -12,7 +12,7 @@ function getNext(){
     })
 }
 
-module.exports = (client, target, context, msg) => {
+module.exports = (client, target, context) => {
     getNext()
     .then(data => {
         course = JSON.parse(data)

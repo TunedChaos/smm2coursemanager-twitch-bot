@@ -12,7 +12,7 @@ function getPlaying(){
     })
 }
 
-module.exports = (client, target, context, msg) => {
+module.exports = (client, target, context) => {
     getPlaying()
     .then(data => {
         course = JSON.parse(data)
