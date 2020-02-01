@@ -16,7 +16,6 @@ function getPosition(personName, courseCode) {
 module.exports = (client, target, context, msg) => {
     var personName = context['display-name']
     var courseCode = msg.substr(msg.indexOf(`${commandPrefix}position`) + 10, 11)
-    console.log(`'${courseCode}'`)
     getPosition(personName,courseCode)
     .then(response => {
         jsonResponse = JSON.parse(response)
