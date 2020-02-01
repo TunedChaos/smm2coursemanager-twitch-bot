@@ -10,12 +10,12 @@ module.exports = (client, target, context, msg) => {
             .catch(console.error)
         }else{
             client.say(target,`@${context['display-name']}, there is currently no list available.`)
-            .then(message => console.log(`Sent message: ${message.content}`))
+            .then(message => console.log(`Sent message: ${message}`))
             .catch(console.error)
         }
     }else{
         client.say(target,`@${context['display-name']}, there is currently no list available.`)
-            .then(message => console.log(`Sent message: ${message.content}`))
+            .then(message => console.log(`Sent message: ${message}`))
             .catch(console.error)
     }
 }
